@@ -2,10 +2,15 @@ package ua.kata
 
 import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.testkit.{ImplicitSender, TestKit}
-import org.scalatest.{BeforeAndAfterEach, BeforeAndAfterAll, Matchers, WordSpecLike}
+import org.scalatest.{BeforeAndAfterAll, BeforeAndAfterEach, Matchers, WordSpecLike}
 
-class BowlingGameTest(testSystem: ActorSystem) extends TestKit(testSystem) with ImplicitSender
-  with WordSpecLike with Matchers with BeforeAndAfterAll with BeforeAndAfterEach {
+class BowlingGameTest(testSystem: ActorSystem)
+  extends TestKit(testSystem)
+  with ImplicitSender
+  with WordSpecLike
+  with Matchers
+  with BeforeAndAfterAll
+  with BeforeAndAfterEach {
 
   def this() = {
     this(ActorSystem("BowlingGameTestSystem"))
