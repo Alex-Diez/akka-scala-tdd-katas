@@ -16,7 +16,7 @@ lazy val common = Seq(
 scalacOptions ++= Seq("-deprecation", "-feature")
 
 lazy val root = Project("akka-scala-tdd-katas", file("."))
-  .aggregate(bowlingGameFirstDay, bowlingGameSecondDay, bowlingGameThirdDay)
+  .aggregate(bowlingGameFirstDay, bowlingGameSecondDay, bowlingGameThirdDay, bowlingGameFourthDay)
 
 lazy val bowlingGameFirstDay = project.in(file("bowling-game-kata/bowling-game-day-1"))
   .settings(common: _*)
@@ -29,3 +29,7 @@ lazy val bowlingGameSecondDay = project.in(file("bowling-game-kata/bowling-game-
 lazy val bowlingGameThirdDay = project.in(file("bowling-game-kata/bowling-game-day-3"))
   .settings(common: _*)
   .settings(name := "bowling-game-day-3")
+
+lazy val bowlingGameFourthDay = project.in(file("bowling-game-kata/bowling-game-day-4"))
+  .settings(common: _*)
+  .settings(name := "bowling-game-day-4")
