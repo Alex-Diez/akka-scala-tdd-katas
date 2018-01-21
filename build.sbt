@@ -17,34 +17,34 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 
 lazy val root = Project("akka-scala-tdd-katas", file("."))
   .aggregate(
-    bowlingGameFirstDay, bowlingGameSecondDay, bowlingGameThirdDay, bowlingGameFourthDay, bowlingGameFifthDay,
-    bowlingGameSixthDay, bowlingGameSeventhDay
+    bowling_game_day_1, bowling_game_day_2, bowling_game_day_3, bowling_game_day_4, bowling_game_day_5,
+    bowling_game_day_6, bowling_game_day_7, bowling_game_day_8
   )
 
-lazy val bowlingGameFirstDay = project.in(file("bowling-game-kata/bowling-game-day-1"))
+lazy val bowling_game_day_1 = project.in(file("bowling_game_kata/bowling_game_day_1"))
   .settings(common: _*)
-  .settings(name := "bowling-game-day-1")
+  .settings(name := "bowling_game_day_1")
 
-lazy val bowlingGameSecondDay = project.in(file("bowling-game-kata/bowling-game-day-2"))
+lazy val bowling_game_day_2 = project.in(file("bowling_game_kata/bowling_game_day_2"))
   .settings(common: _*)
-  .settings(name := "bowling-game-day-2")
+  .settings(name := "bowling_game_day_2")
 
-lazy val bowlingGameThirdDay = project.in(file("bowling-game-kata/bowling-game-day-3"))
+lazy val bowling_game_day_3 = project.in(file("bowling_game_kata/bowling_game_day_3"))
   .settings(common: _*)
-  .settings(name := "bowling-game-day-3")
+  .settings(name := "bowling_game_day_3")
 
-lazy val bowlingGameFourthDay = project.in(file("bowling-game-kata/bowling-game-day-4"))
+lazy val bowling_game_day_4 = project.in(file("bowling_game_kata/bowling_game_day_4"))
   .settings(common: _*)
-  .settings(name := "bowling-game-day-4")
+  .settings(name := "bowling_game_day_4")
 
-lazy val bowlingGameFifthDay = project.in(file("bowling-game-kata/bowling-game-day-5"))
+lazy val bowling_game_day_5 = project.in(file("bowling_game_kata/bowling_game_day_5"))
   .settings(common: _*)
-  .settings(name := "bowling-game-day-5")
+  .settings(name := "bowling_game_day_5")
 
-lazy val bowlingGameSixthDay = project.in(file("bowling-game-kata/bowling-game-day-6"))
+lazy val bowling_game_day_6 = project.in(file("bowling_game_kata/bowling_game_day_6"))
   .settings(common: _*)
-  .settings(name := "bowling-game-day-6")
+  .settings(name := "bowling_game_day_6")
 
-lazy val bowlingGameSeventhDay = project.in(file("bowling-game-kata/bowling-game-day-7"))
+lazy val bowling_game_day_7 = project.in(file("bowling_game_kata/bowling_game_day_7"))
   .settings(common: _*)
-  .settings(name := "bowling-game-day-7")
+  .settings(name := "bowling_game_day_7")
