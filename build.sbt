@@ -19,7 +19,8 @@ lazy val root = Project("akka-scala-tdd-katas", file("."))
   .aggregate(
     bowling_game_day_1, bowling_game_day_2, bowling_game_day_3, bowling_game_day_4, bowling_game_day_5,
     bowling_game_day_6, bowling_game_day_7, bowling_game_day_8, bowling_game_day_9, bowling_game_day_10,
-    bowling_game_day_11, bowling_game_day_12, bowling_game_day_13, bowling_game_day_14
+    bowling_game_day_11, bowling_game_day_12, bowling_game_day_13, bowling_game_day_14,
+    add_two_numbers_day_1
   )
 
 lazy val bowling_game_day_1 = project.in(file("bowling_game_kata/bowling_game_day_1"))
@@ -77,3 +78,7 @@ lazy val bowling_game_day_13 = project.in(file("bowling_game_kata/bowling_game_d
 lazy val bowling_game_day_14 = project.in(file("bowling_game_kata/bowling_game_day_14"))
   .settings(common: _*)
   .settings(name := "bowling_game_day_14")
+
+lazy val add_two_numbers_day_1 = project.in(file("add_two_numbers_kata/add_two_numbers_day_1"))
+  .settings(common: _*)
+  .settings(name := "add_two_numbers_day_1")
