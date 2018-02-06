@@ -94,3 +94,7 @@ lazy val add_two_numbers_day_5 = project.in(file("add_two_numbers_kata/add_two_n
 lazy val add_two_numbers_day_6 = project.in(file("add_two_numbers_kata/add_two_numbers_day_6"))
   .settings(common: _*)
   .settings(name := "add_two_numbers_day_6")
+
+lazy val add_two_numbers_day_7 = project.in(file("add_two_numbers_kata/add_two_numbers_day_7"))
+  .settings(common: _*)
+  .settings(name := "add_two_numbers_day_7")
