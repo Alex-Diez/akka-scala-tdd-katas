@@ -129,3 +129,7 @@ lazy val actors_add_two_numbers_day_8 = project
 lazy val streams_bowling_game_day_1 = project.in(file("streams/bowling_game_kata/bowling_game_day_01"))
   .settings(common: _*)
   .settings(name := "streams_bowling_game_day_01")
+
+lazy val streams_bowling_game_day_2 = project.in(file("streams/bowling_game_kata/bowling_game_day_02"))
+  .settings(common: _*)
+  .settings(name := "streams_bowling_game_day_02")
